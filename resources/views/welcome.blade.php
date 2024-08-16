@@ -4,16 +4,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>DAMS_ver3</title>
+        <title>DAMS_ver2</title>
 
-        <!-- Frontend -->
-        <link href="{{ asset('elements/frontend/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+        <!-- CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href="{{ asset('elements/frontend/css/bootstrap.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/frontend/css/bootstrap-responsive.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/frontend/css/prettyPhoto.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/frontend/css/flexslider.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/frontend/css/custom-styles.css')}}" rel="stylesheet" type="text/css">
+        
+        <!-- JS -->
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <link href="{{ asset('elements/backend/js/bootstrap.js')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/backend/js/jquery.prettyPhoto.js')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/backend/js/jquery.flexslider.js')}}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('elements/backend/js/jquery.custom.js')}}" rel="stylesheet" type="text/css">
 
-        <link href="{{ asset('elements/frontend/css/fontawesome.css')}}" rel="stylesheet" type="text/css">
-        <link href="{{ asset('elements/frontend/css/templatemo-cyborg-gaming.css')}}" rel="stylesheet" type="text/css">
-        <link href="{{ asset('elements/frontend/css/owl.css')}}" rel="stylesheet" type="text/css">
-        <link href="{{ asset('elements/frontend/css/animate.css')}}" rel="stylesheet" type="text/css">
-        <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
 
     </head>
@@ -21,14 +28,38 @@
         <div id="app"></div>
         <script src="{{ asset('js/app.js') }}"> </script>
 
-        <script src="{{ asset('elements/frontend/vendor/jquery/jquery.min.js') }}"> </script>
-        <script src="{{ asset('elements/frontend/vendor/bootstrap/js/bootstrap.min.js') }}"> </script>
-        <script src="{{ asset('elements/frontend/js/isotope.min.js') }}"> </script>
-        <script src="{{ asset('elements/frontend/js/owl-carousel.js') }}"> </script>
-        <script src="{{ asset('elements/frontend/js/tabs.js') }}"> </script>
-        <script src="{{ asset('elements/frontend/js/popup.js') }}"> </script>
-        <script src="{{ asset('elements/frontend/js/custom.js') }}"> </script>
-
 
     </body>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#btn-blog-next").click(function () {
+            $('#blogCarousel').carousel('next')
+            });
+            $("#btn-blog-prev").click(function () {
+            $('#blogCarousel').carousel('prev')
+            });
+
+            $("#btn-client-next").click(function () {
+            $('#clientCarousel').carousel('next')
+            });
+            $("#btn-client-prev").click(function () {
+            $('#clientCarousel').carousel('prev')
+            });
+            
+        });
+
+        $(window).load(function(){
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                start: function(slider){
+                $('body').removeClass('loading');
+                }
+            });  
+        });
+
+    </script>
 </html>
