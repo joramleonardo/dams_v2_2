@@ -19,7 +19,7 @@ Banner Style
 
 .main-banner {
 	/* background-image: url(../images/banner-bg.jpg); */
-	background-image: url(../images/blue_bg.png);
+	background-image: url(../../../images/blue_bg.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;

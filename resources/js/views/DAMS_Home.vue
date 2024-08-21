@@ -36,7 +36,7 @@
             </div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="row header">
                 <div class="span5 logo">
@@ -282,3 +282,17 @@
     </div>
 </template>
 
+<script>
+    export default {
+        data() {
+            return {
+            selected: null,
+            options: [
+                { value: null, text: 'Select Type' },
+                { value: 'a', text: 'Events' },
+                { value: 'b', text: 'Coverages' },
+            ]
+            }
+        }
+    }
+</script>
