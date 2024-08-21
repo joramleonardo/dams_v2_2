@@ -3187,7 +3187,7 @@ input[type="button"].btn-block {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #006dcc;
-  *background-color: #0044cc;
+  /* *background-color: #0044cc; */
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
   background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
   background-image: -o-linear-gradient(top, #0088cc, #0044cc);
@@ -3367,7 +3367,7 @@ input[type="button"].btn-block {
 .btn-inverse[disabled] {
   color: #ffffff;
   background-color: #222222;
-  *background-color: #151515;
+  /* *background-color: #151515; */
 }
 
 .btn-inverse:active,
@@ -3377,8 +3377,8 @@ input[type="button"].btn-block {
 
 button.btn,
 input[type="submit"].btn {
-  *padding-top: 3px;
-  *padding-bottom: 3px;
+  /* *padding-top: 3px;
+  *padding-bottom: 3px; */
 }
 
 button.btn::-moz-focus-inner,
