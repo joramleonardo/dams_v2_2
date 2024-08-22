@@ -10454,23 +10454,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -72995,180 +72978,128 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { attrs: { id: "page-top" } }, [
-    _c(
-      "div",
-      {
-        staticClass:
-          "navbar navbar-expand-lg bg-dark text-uppercase fixed-top mb-5",
-        attrs: { id: "mainNav" }
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse",
-              attrs: { id: "navbarResponsive" }
-            },
-            [
-              _c("ul", { staticClass: "navbar-nav ms-auto" }, [
-                _c("li", { staticClass: "nav-item mx-0 mx-lg-1" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "nav-link py-3 px-0 px-lg-3 rounded",
-                      attrs: { href: "" }
-                    },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          staticStyle: { color: "#fff !important" },
-                          attrs: { to: "/home" }
-                        },
-                        [
-                          _vm._v(
-                            "\n                          Home\n                          "
-                          )
-                        ]
-                      )
-                    ],
-                    1
-                  )
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-xl-10 col-lg-12 col-md-9" }, [
+        _c("div", { staticClass: "card o-hidden border-0 shadow-lg my-5" }, [
+          _c("div", { staticClass: "card-body p-0" }, [
+            _c(
+              "div",
+              {
+                staticClass: "row",
+                staticStyle: { "margin-bottom": "-40px !important" }
+              },
+              [
+                _c("div", {
+                  staticClass: "col-lg-6 d-none d-lg-block bg-login-image"
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-lg-6" }, [
+                  _c("div", { staticClass: "p-5" }, [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c(
+                      "form",
+                      {
+                        staticClass: "user",
+                        attrs: { id: "contactForm login-form" },
+                        on: {
+                          submit: function($event) {
+                            $event.preventDefault()
+                            return _vm.login.apply(null, arguments)
+                          }
+                        }
+                      },
+                      [
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.user.username,
+                                expression: "user.username"
+                              }
+                            ],
+                            staticClass: "form-control form-control-user",
+                            attrs: {
+                              type: "email",
+                              id: "exampleInputEmail",
+                              "aria-describedby": "emailHelp",
+                              placeholder: "Enter Email Address..."
+                            },
+                            domProps: { value: _vm.user.username },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.user,
+                                  "username",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "form-group" }, [
+                          _c("input", {
+                            directives: [
+                              {
+                                name: "model",
+                                rawName: "v-model",
+                                value: _vm.user.password,
+                                expression: "user.password"
+                              }
+                            ],
+                            staticClass: "form-control form-control-user",
+                            attrs: {
+                              type: "password",
+                              id: "exampleInputPassword",
+                              placeholder: "Password"
+                            },
+                            domProps: { value: _vm.user.password },
+                            on: {
+                              input: function($event) {
+                                if ($event.target.composing) {
+                                  return
+                                }
+                                _vm.$set(
+                                  _vm.user,
+                                  "password",
+                                  $event.target.value
+                                )
+                              }
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("hr"),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "btn btn-primary btn-user btn-block",
+                            attrs: { href: "index.html" }
+                          },
+                          [
+                            _vm._v(
+                              "\r\n                                            Login\r\n                                        "
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
                 ])
-              ])
-            ]
-          )
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      { staticClass: "masthead page-section", attrs: { id: "contact" } },
-      [
-        _c("div", { staticClass: "container" }, [
-          _c(
-            "h2",
-            {
-              staticClass:
-                "page-section-heading text-center text-uppercase text-secondary mb-0"
-            },
-            [_vm._v("Login")]
-          ),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _c("div", { staticClass: "row justify-content-center" }, [
-            _c("div", { staticClass: "col-lg-8 col-xl-7" }, [
-              _c(
-                "form",
-                {
-                  attrs: { id: "contactForm login-form" },
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      return _vm.login.apply(null, arguments)
-                    }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "form-floating mb-3" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.user.username,
-                          expression: "user.username"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: {
-                        required: "",
-                        id: "username",
-                        type: "text",
-                        placeholder: "Enter your name..."
-                      },
-                      domProps: { value: _vm.user.username },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.user, "username", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", { attrs: { for: "name" } }, [
-                      _vm._v("Usename")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v("A username is required.")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "form-floating mb-3" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.user.password,
-                          expression: "user.password"
-                        }
-                      ],
-                      staticClass: "form-control",
-                      attrs: {
-                        required: "",
-                        id: "email",
-                        type: "password",
-                        placeholder: "Enter your name..."
-                      },
-                      domProps: { value: _vm.user.password },
-                      on: {
-                        input: function($event) {
-                          if ($event.target.composing) {
-                            return
-                          }
-                          _vm.$set(_vm.user, "password", $event.target.value)
-                        }
-                      }
-                    }),
-                    _vm._v(" "),
-                    _c("label", { attrs: { for: "name" } }, [
-                      _vm._v("Password")
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v("A password is required.")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "b-button",
-                    {
-                      staticClass: "block button",
-                      staticStyle: {
-                        "background-color": "rgba(48, 110, 148, 0.9) !important"
-                      },
-                      attrs: { id: "submit", type: "submit" }
-                    },
-                    [_vm._v("Login")]
-                  )
-                ],
-                1
-              )
-            ])
+              ]
+            )
           ])
         ])
-      ]
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -73176,38 +73107,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass:
-          "navbar-toggler text-uppercase font-weight-bold bg-success text-white rounded",
-        attrs: {
-          type: "button",
-          "data-bs-toggle": "collapse",
-          "data-bs-target": "#navbarResponsive",
-          "aria-controls": "navbarResponsive",
-          "aria-expanded": "false",
-          "aria-label": "Toggle navigation"
-        }
-      },
-      [
-        _vm._v("\n              Menu\n              "),
-        _c("i", { staticClass: "fas fa-bars" })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "divider-custom" }, [
-      _c("div", { staticClass: "divider-custom-line" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "divider-custom-icon" }, [
-        _c("i", { staticClass: "fas fa-star" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "divider-custom-line" })
+    return _c("div", { staticClass: "text-center" }, [
+      _c("h1", { staticClass: "h4 text-gray-900 mb-4" }, [
+        _vm._v("Welcome Back!")
+      ])
     ])
   }
 ]

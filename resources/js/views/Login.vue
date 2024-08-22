@@ -1,67 +1,50 @@
 <template>
-  <div id="page-top">
+<div class="container">
 
-    <div class="navbar navbar-expand-lg bg-dark text-uppercase fixed-top mb-5" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-success text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="">
-                            <router-link to="/home" style="color: #fff !important;">
-                            Home
-                            </router-link>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="">
-                            <router-link to="/home/technical" style="color: #fff !important;">
-                            Submit Request
-                            </router-link>
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </div>
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
 
-    <!-- Login Section-->
-    <section class="masthead page-section" id="contact">
-        <div class="container">
-            <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Login</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <form id="contactForm login-form" v-on:submit.prevent="login">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input required class="form-control" id="username" type="text" placeholder="Enter your name..." v-model="user.username"/>
-                            <label for="name">Usename</label>
-                            <div class="invalid-feedback">A username is required.</div>
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row" style="margin-bottom: -40px !important">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                    </div>
+                                    <form class="user" id="contactForm login-form" v-on:submit.prevent="login">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-control-user"
+                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                placeholder="Enter Email Address..."
+                                                v-model="user.username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user"
+                                                id="exampleInputPassword" placeholder="Password"
+                                                v-model="user.password">
+                                        </div>
+                                        <hr>
+                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                            Login
+                                        </a>
+                                    </form>
+                                    
+                                </div>
+                            </div>
                         </div>
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input required class="form-control" id="email" type="password" placeholder="Enter your name..." v-model="user.password"/>
-                            <label for="name">Password</label>
-                            <div class="invalid-feedback">A password is required.</div>
-                        </div>
-                        <b-button id="submit" type="submit" class="block button" style="background-color: rgba(48, 110, 148, 0.9) !important;">Login</b-button>
-                    </form>
+                    </div>
                 </div>
+
             </div>
+
         </div>
-    </section>
-  </div>
+
+    </div>
 
 </template>
 
