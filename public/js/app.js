@@ -10360,6 +10360,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -69809,25 +69814,7 @@ var render = function() {
                   _c("div", { staticClass: "inner-form" }, [
                     _vm._m(1),
                     _vm._v(" "),
-                    _c("div", { staticClass: "input-field second-wrap" }, [
-                      _c(
-                        "div",
-                        { staticClass: "input-select" },
-                        [
-                          _c("b-form-select", {
-                            attrs: { options: _vm.options },
-                            model: {
-                              value: _vm.selected,
-                              callback: function($$v) {
-                                _vm.selected = $$v
-                              },
-                              expression: "selected"
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    ]),
+                    _vm._m(2),
                     _vm._v(" "),
                     _c("div", { staticClass: "input-field third-wrap" }, [
                       _c(
@@ -69864,7 +69851,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row header" }, [
-        _vm._m(2),
+        _vm._m(3),
         _vm._v(" "),
         _c("div", { staticClass: "span7 navigation" }, [
           _c("div", { staticClass: "navbar hidden-phone" }, [
@@ -69948,7 +69935,7 @@ var render = function() {
             ])
           ]),
           _vm._v(" "),
-          _vm._m(3)
+          _vm._m(4)
         ])
       ]),
       _vm._v(" "),
@@ -69981,7 +69968,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(4),
+        _vm._m(5),
         _vm._v(" "),
         _c("div", { staticClass: "span4" }, [
           _c("h3", [
@@ -70036,7 +70023,7 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _vm._m(5)
+          _vm._m(6)
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "span6" }, [
@@ -70081,11 +70068,11 @@ var render = function() {
               1
             ),
             _vm._v(" "),
-            _vm._m(6),
-            _vm._v(" "),
             _vm._m(7),
             _vm._v(" "),
-            _vm._m(8)
+            _vm._m(8),
+            _vm._v(" "),
+            _vm._m(9)
           ])
         ])
       ]),
@@ -70127,69 +70114,69 @@ var render = function() {
                   attrs: { "data-id": "id-1", "data-type": "illustration" }
                 },
                 [
-                  _vm._m(9),
-                  _vm._v(" "),
                   _vm._m(10),
                   _vm._v(" "),
-                  _c(
-                    "span",
-                    { staticClass: "project-details" },
-                    [
-                      _c("a", [_vm._v("Lorem ipsum dolor sit amet")]),
-                      _vm._v(
-                        "\n                                Nulla vitae risus aliquam, tincidunt ipsum suscipit, molestie purus. Nulla facilisi... \n                                "
-                      ),
-                      _c("router-link", { attrs: { to: "/post-details" } }, [
-                        _vm._v(
-                          "\n                                    Read More\n                                "
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass: "span3 gallery-item",
-                  attrs: { "data-id": "id-1", "data-type": "illustration" }
-                },
-                [
                   _vm._m(11),
                   _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "project-details" },
+                    [
+                      _c("a", [_vm._v("Lorem ipsum dolor sit amet")]),
+                      _vm._v(
+                        "\n                                Nulla vitae risus aliquam, tincidunt ipsum suscipit, molestie purus. Nulla facilisi... \n                                "
+                      ),
+                      _c("router-link", { attrs: { to: "/post-details" } }, [
+                        _vm._v(
+                          "\n                                    Read More\n                                "
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "span3 gallery-item",
+                  attrs: { "data-id": "id-1", "data-type": "illustration" }
+                },
+                [
                   _vm._m(12),
                   _vm._v(" "),
-                  _c(
-                    "span",
-                    { staticClass: "project-details" },
-                    [
-                      _c("a", [_vm._v("Lorem ipsum dolor sit amet")]),
-                      _vm._v(
-                        "\n                                Nulla vitae risus aliquam, tincidunt ipsum suscipit, molestie purus. Nulla facilisi... \n                                "
-                      ),
-                      _c("router-link", { attrs: { to: "/post-details" } }, [
-                        _vm._v(
-                          "\n                                    Read More\n                                "
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                {
-                  staticClass: "span3 gallery-item",
-                  attrs: { "data-id": "id-1", "data-type": "illustration" }
-                },
-                [
                   _vm._m(13),
                   _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "project-details" },
+                    [
+                      _c("a", [_vm._v("Lorem ipsum dolor sit amet")]),
+                      _vm._v(
+                        "\n                                Nulla vitae risus aliquam, tincidunt ipsum suscipit, molestie purus. Nulla facilisi... \n                                "
+                      ),
+                      _c("router-link", { attrs: { to: "/post-details" } }, [
+                        _vm._v(
+                          "\n                                    Read More\n                                "
+                        )
+                      ])
+                    ],
+                    1
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                {
+                  staticClass: "span3 gallery-item",
+                  attrs: { "data-id": "id-1", "data-type": "illustration" }
+                },
+                [
                   _vm._m(14),
+                  _vm._v(" "),
+                  _vm._m(15),
                   _vm._v(" "),
                   _c(
                     "span",
@@ -70217,9 +70204,9 @@ var render = function() {
                   attrs: { "data-id": "id-1", "data-type": "illustration" }
                 },
                 [
-                  _vm._m(15),
-                  _vm._v(" "),
                   _vm._m(16),
+                  _vm._v(" "),
+                  _vm._m(17),
                   _vm._v(" "),
                   _c(
                     "span",
@@ -70268,6 +70255,28 @@ var staticRenderFns = [
           placeholder: "What are you looking for?"
         }
       })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-field second-wrap" }, [
+      _c("div", { staticClass: "input-select" }, [
+        _c(
+          "select",
+          { attrs: { "data-trigger": "", name: "choices-single-defaul" } },
+          [
+            _c("option", { attrs: { placeholder: "" } }, [_vm._v("CATEGORY")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Subject A")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Subject B")]),
+            _vm._v(" "),
+            _c("option", [_vm._v("Subject C")])
+          ]
+        )
+      ])
     ])
   },
   function() {

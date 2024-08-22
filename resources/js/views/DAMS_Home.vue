@@ -18,7 +18,12 @@
                             </div>
                             <div class="input-field second-wrap">
                                 <div class="input-select">
-                                    <b-form-select v-model="selected" :options="options"></b-form-select>
+                                    <select data-trigger="" name="choices-single-defaul">
+                <option placeholder="">CATEGORY</option>
+                <option>Subject A</option>
+                <option>Subject B</option>
+                <option>Subject C</option>
+              </select>
                                 </div>
                             </div>
                             <div class="input-field third-wrap">
