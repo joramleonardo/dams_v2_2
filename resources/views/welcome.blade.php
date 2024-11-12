@@ -40,6 +40,11 @@
         <script src="{{ asset('elements/backend/js/extention/choices.js') }}"> </script>
 
         <!-- Admin Template-->
+        <script src="{{ asset('elements/backend/js/sb-admin-2.min.js') }}"> </script>
+        <script src="{{ asset('elements/backend/vendor/jquery/jquery.min.js') }}"> </script>
+
+
+
         <!-- <script src="{{ asset('elements/backend/') }}"> </script> -->
         <script src="{{ asset('elements/backend/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"> </script>
         <script src="{{ asset('elements/backend/vendor/jquery-easing/jquery.easing.min.js') }}"> </script>

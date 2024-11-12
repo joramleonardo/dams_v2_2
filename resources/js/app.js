@@ -12,7 +12,7 @@ import router from './router';
 
 // require("bootstrap-css-only/css/bootstrap.min.css");
 // require("mdbvue/lib/css/mdb.min.css");
-// require("@fortawesome/fontawesome-free/css/all.min.css");
+require("@fortawesome/fontawesome-free/css/all.min.css");
 
 // import * as mdbvue from 'mdbvue'
 // for (const component in mdbvue) {
@@ -21,15 +21,15 @@ import router from './router';
 
 
 
-// import BootstrapVue from 'bootstrap-vue';
-// import FlashMessage from '@smartweb/vue-flash-message';
+import BootstrapVue from 'bootstrap-vue';
+import FlashMessage from '@smartweb/vue-flash-message';
 // Vue.use(VueSweetalert2);
 
 
 
 
-// Vue.use(BootstrapVue);
-// Vue.use(FlashMessage);
+Vue.use(BootstrapVue);
+Vue.use(FlashMessage);
 
 Vue.config.productionTip = false
 
